@@ -35,6 +35,11 @@ class _PostWidgetState extends State<PostWidget> {
     await DBHelper().updateLikes(widget.post.id!, currentLikes);
   }
 
+/// Construye la representación visual de una publicación individual utilizando un componente [Card].
+/// Se implementa un margen uniforme para la separación de elementos y una disposición vertical 
+/// mediante [Column], alineando los componentes al inicio del eje horizontal ([crossAxisAlignment.start]) 
+/// para garantizar una jerarquía visual clara en el contenido del feed.
+  
   @override
   Widget build(BuildContext context) {
     return Card(
