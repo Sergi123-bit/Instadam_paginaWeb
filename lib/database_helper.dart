@@ -1,6 +1,5 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
-// Asegúrate de que el archivo post.dart existe y el nombre de la clase sea Post
 import 'post.dart';
 
 class DBHelper {
