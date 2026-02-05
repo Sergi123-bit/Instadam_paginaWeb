@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// IMPORTACIONES NECESARIAS:
 import 'main.dart';         // Para usar SessionManager
 import 'feed_screen.dart';  // Para que reconozca la pantalla InstaDamFeed
 
