@@ -22,7 +22,7 @@ class _InstaDamFeedState extends State<InstaDamFeed> {
     'assets/descarga (9).jpg',
   ];
 
-  // 2. COMENTARIOS PERSONALIZADOS: Un comentario único para cada una de tus fotos
+  // 2. COMENTARIOS PERSONALIZADOS
   final List<String> comentariosEs = [
     "Los impresionantes Pilares de la Creación.", // Comentario para images.jpg
     "Una nebulosa lejana captada en alta resolución.", // descarga (1)
@@ -44,6 +44,10 @@ class _InstaDamFeedState extends State<InstaDamFeed> {
     final settings = Provider.of<SettingsProvider>(context);
     final String language = settings.currentLocale.languageCode;
 
+    /// Define la estructura principal de la interfaz de usuario mediante un [Scaffold].
+/// El [AppBar] incluye un título dinámico que implementa soporte de internacionalización 
+/// (i18n), alternando entre español e inglés según el estado de la variable [language],
+/// y asegura una alineación centrada del texto para mantener la consistencia estética.
     return Scaffold(
       appBar: AppBar(
         title: Text(language == 'es' ? "Mi Feed Espacial" : "Space Feed"),
